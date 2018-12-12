@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/**
+*created by Clara Guo  2018-10-11
+* used for zhongzhi tab static
+ */
+
+.gg-container {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.gg-zzContainer {
+}
+.gg-zzInfoContainer  > .gg-zzInfoDetail {
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.gg-zzInfoContainer > .gg-zzInfoDetailActive{
+    height: auto;
+}
+
+.gg-zzTabList {
+    padding: 0px 0px 0px 0px;
+    background-color: #fff;
+    font-size: 16px;
+    min-width: 800px;
+    border: 1px solid #e8e8e8;
+    white-space: nowrap;
+}
+
+.gg-zzTabList a {
+    display: inline-block;
+    padding: 12px 16px;
+    color: #666;
+    vertical-align: middle;
+    font-size: 12px;
+    border-right: 1px solid #eee;
+}
+
+.gg-tabActive {
+    color: #42acea !important;
+    border-top: 4px solid #42acea;
+}
+.gg-colNopadding{
+    padding-left: 0px;
+}

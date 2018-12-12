@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>大屏示例五</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/gg-bigdata.css">
+</head>
+<body class="bigDataBg" style="background-size: auto;">
+    <div class="container-fluid gg-bigDataContainer">
+        <!--第一行-->
+        <div class="row">
+            <!--左侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgOne">
+                        <div class="ibox-title ibox-lightTitle">员工性别占比</div>
+                        <div class="ibox-lightContent">
+                            <div class="ibox-lightContentL">
+                                <div class="gg-bigDataChartRs">
+                                    <div class="echarts" id="rsPieChartOne" style="width: 100%;height: 150px"></div>
+                                </div>
+                            </div>
+                            <div class="ibox-lightContentR">
+                                <table class="table table-condensed gg-Rstable">
+                                    <tr>
+                                        <td>性别</td>
+                                        <td>人数</td>
+                                        <td>占比</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: #f9777e;">■</span>女教职工</td>
+                                        <td>68304</td>
+                                        <td>67.87%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: #2cabd3;">■</span>男教职工</td>
+                                        <td>32333</td>
+                                        <td>32.13%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgOne">
+                        <div class="ibox-title ibox-lightTitle">员工类型占比</div>
+                            <div class="ibox-lightContent">
+                                <div class="ibox-lightContentL">
+                                    <div class="gg-bigDataChartRs">
+                                        <div class="echarts" id="rsPieChartTwo" style="width: 100%;height: 150px"></div>
+                                    </div>
+                                </div>
+                                <div class="ibox-lightContentR">
+                                    <table class="table table-condensed gg-Rstable">
+                                        <tr>
+                                            <td style="letter-spacing: 10px">类型</td>
+                                            <td>人数</td>
+                                            <td>占比</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #14a4dc;">■</span>专任</td>
+                                            <td>93862</td>
+                                            <td>93.27%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #e7c22e;">■</span>其他</td>
+                                            <td>6775</td>
+                                            <td>6.73%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgTwo">
+                        <div class="ibox-title ibox-lightTitle">员工学历占比</div>
+                            <div class="ibox-lightContent">
+                                <div class="ibox-lightContentL">
+                                    <div class="gg-bigDataChartRs">
+                                        <div class="echarts" id="rsPieChartThree" style="width: 100%;height: 240px"></div>
+                                    </div>
+                                </div>
+                                <div class="ibox-lightContentR" style="height: auto;margin-top: 12px;">
+                                    <table class="table table-condensed gg-Rstable">
+                                        <tr>
+                                            <td style="letter-spacing: 10px">学历</td>
+                                            <td>人数</td>
+                                            <td>占比</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #2ec7c9;">■</span>博士</td>
+                                            <td>13</td>
+                                            <td>0.02%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #b6a2de;">■</span>硕士</td>
+                                            <td>3780</td>
+                                            <td>5.15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #5ab1ef;">■</span>本科</td>
+                                            <td>60999</td>
+                                            <td>83.05%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #ffb980;">■</span>专科</td>
+                                            <td>7685</td>
+                                            <td>10.46%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #d87a80;">■</span>高中</td>
+                                            <td>961</td>
+                                            <td>1.31%</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span style="color: #8d98b3;">■</span>初中</td>
+                                            <td>12</td>
+                                            <td>0.02%</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间部分-->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="bigDataPolaroid" style="background: none;border: none;">
+                    <div class="ibox">
+                        <div class="ibox-lightContent" style="text-align: center;padding: 1px 20px 0px 20px;">
+                            <h3 class="bigDataHeader">
+                                大屏示例五
+                            </h3>
+                            <div style="position: absolute;top: 100px;left: 40px;">
+                                <table class="table table-condensed gg-Rstable">
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-jzg.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">教职工数</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">100637</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-zxzg.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">专任员工数</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">20</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-female.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">女员工数</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">68304</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-doctor.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">博士毕业</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">13</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-master.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">硕士毕业</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">3780</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-bachelor.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">本科毕业</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">60999</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-senior.png" style="width: 20px;height: 25px;"></td>
+                                        <td style="color: #fff;">高中毕业</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">961</span>人</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="images/bigdata/icon-junior.png" style="width: 30px;height: 25px;"></td>
+                                        <td style="color: #fff;">初中毕业</td>
+                                        <td><span style="font-size: 16px;font-style: italic;color:#ecba20;">12</span>人</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div style="margin-left: 13%;">
+                                <div class="gg-bigDataChartRs">
+                                    <div class="echarts" id="qdMapChart"  style="width: 100%;height: 675px;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgOne">
+                        <div class="ibox-title ibox-lightTitle">员工岗位分布</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsPieChartFour"  style="width: 100%;height: 160px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgOne">
+                        <div class="ibox-title ibox-lightTitle">政治面貌分布</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsPieChartFive"  style="width: 100%;height: 160px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgTwo">
+                        <div class="ibox-title ibox-lightTitle">员工专业技术职业分布</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsPieChartSix" style="width: 100%;height: 240px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第二行数-->
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgFour">
+                        <div class="ibox-title ibox-lightTitle" style="padding: 8px 46px 7px;">员工年龄分布</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsBarChartOne" style="width: 100%;height: 150px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2" style="margin-left: -12px;">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgFive">
+                        <div class="ibox-title ibox-lightTitle" style="padding: 8px 15px 7px;">员工少数民族占比</div>
+                        <div class="ibox-lightContent">
+                            <div class="ibox-lightContentL">
+                                <div class="gg-bigDataChartRs">
+                                    <div class="echarts" id="rsPieChartSeven" style="width: 100%;height: 150px"></div>
+                                </div>
+                            </div>
+                            <div class="ibox-lightContentR" style="margin-left: 0;">
+                                <table class="table table-condensed gg-Rstable">
+                                    <tr>
+                                        <td style="letter-spacing: 10px">类型</td>
+                                        <td>占比</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: #14a4dc;">■</span>汉族</td>
+                                        <td>93.27%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span style="color: #e7c22e;">■</span>少数民族</td>
+                                        <td>6.73%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2" style="margin-left: 2px;">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgSix">
+                        <div class="ibox-title ibox-lightTitle">员工城乡分布</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsPieChartEight" style="width: 100%;height: 150px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="bigDataPolaroid">
+                    <div class="ibox gg-bigDataChartRsBgThree">
+                        <div class="ibox-title ibox-lightTitle" style="padding: 8px 46px 7px;">各地区员工总数</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-bigDataChartRs">
+                                <div class="echarts" id="rsBarChartTwo" style="width: 100%;height: 150px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--引用相关js框架-->
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/bootstrap.min.js"></script>
+<script src="plugins/echarts/echarts.min.js"></script>
+<!--引入主题-->
+<script src="plugins/echarts/macarons.js"></script>
+<!--引入青岛js-->
+<script src="plugins/echarts/qingdao.js"></script>
+<!--大屏数据通用js-->
+<script src="js/gg-bigDataBasic.js"></script>
+<!--本界面相关的echar demo数据js-->
+<script src="js/gg-bigDataRs.js"></script>
+<!--本界面相关生成地图的js-->
+<script src="js/gg-bigDataQdRs.js"></script>
+</html>

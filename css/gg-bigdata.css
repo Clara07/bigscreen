@@ -1,0 +1,1545 @@
+@charset "UTF-8"; /**
+* Created by Clara Guo 2018-10-09
+**/
+html,body {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI";
+}
+
+.noPadding {
+    padding: 0 !important;
+}
+
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+}
+
+/*bigOne css start*/
+.bigOne {
+    width: 100%;
+    background: -webkit-linear-gradient(left, #258f87,#268182,#286e7d,#2a5974,#2f496b,#323b62,#342f5b);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #258f87,#268182,#286e7d,#2a5974,#2f496b,#323b62,#342f5b);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #258f87,#268182,#286e7d,#2a5974,#2f496b,#323b62,#342f5b);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #258f87,#268182,#286e7d,#2a5974,#2f496b,#323b62,#342f5b);
+    /* 标准的语法（必须放在最后） */
+}
+
+div.polaroid {
+    width: 100%;
+    background-color: #0d3749;
+    color: #dfebf2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3px;
+}
+
+div.polaroidT {
+    width: 100%;
+    background-color: #0a203b;
+    color: #eeeeee;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0px;
+}
+
+div.polaroidInter {
+    width: 100%;
+    background-color: #233445;
+    color: #d6dadd;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0px;
+}
+
+.ibox {
+    clear: both;
+    margin-bottom: 3px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.ibox-title {
+    color: inherit;
+    margin-bottom: 0;
+    padding: 14px 15px 7px;
+    min-height: 48px;
+}
+
+.ibox-BlueTitle {
+    background-color: #156693;
+    color: #e0eeee;
+    text-align: center;
+    min-height: 30px;
+}
+
+.ibox-BlueTitle h4 {
+    font-size: 14px;
+}
+
+.iboxTitleUl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.iboxTitleUl > li {
+    padding: 0px 12px;
+}
+
+.iboxContentList {
+    position:relative; animation: moveUp 8s 0.6s infinite; -webkit-animation: moveUp 8s 0.6s infinite;
+}
+
+.iboxContentList > li {
+    padding:4px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.iboxContentList >li >span {
+    padding: 0px 0px;
+    text-align: center;
+    display: block;
+    width: 84px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.ibox-content {
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+}
+
+.ibox-content {
+    clear: both;
+}
+
+.ibox-title h4 {
+    display: inline;
+    font-size: 14px;
+}
+
+.gg-time {
+    float: right;
+    font-size: 13px;
+    color: #92b4c9;
+}
+
+.gg-time:hover {
+    color: #92b4c9;
+}
+
+div.greenLabel {
+    display: flex;
+}
+
+div.greenLabel .greenLabelImg {
+    height: 68px;
+    display: inline-block;
+    margin-left: 26%;
+}
+
+div.greenLabel .greenLabelImg img {
+    width: 100%;
+    height: 100%;
+}
+
+div.greenLabel .greenContent {
+    display: inline-block;
+}
+
+div.greenLabel .greenContent span {
+    font-size: 12px;
+}
+
+div.greenLabel .greenContent > p {
+    font-size: 14px;
+    margin: 0;
+    color: #28ccb8;
+}
+
+div.greenLabel .greenContent span:first-child {
+    color: #c6d3da;
+}
+
+div.greenLabel .greenContent span:last-child {
+    color: #7c9eb3;
+}
+
+.gg-progress {
+    background: #204663;
+    border-radius: 20px;
+    height: 10px;
+    border-top: 1px solid #204663;
+    box-shadow: 0 5px 4px -6px #102a43;
+    margin-top: 27px;
+    overflow: visible;
+    position: relative;
+}
+
+.gg-progress:first-child {
+    margin-top: 10px;
+}
+
+.gg-progress .gg-progress-bar {
+    border-radius: 20px;
+    position: relative;
+    animation: animate-positive 2s;
+}
+
+.gg-progress-bar {
+    background: linear-gradient(to right, #1ac5be 0%,#3ed7ab 20%,#74f18e 58%);
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.gg-progress .gg-progress-value {
+    display: block;
+    font-size: 13px;
+    color: #9dbfd4;
+    border-radius: 4px;
+    padding: 3px 9px;
+    position: absolute;
+    top: -24px;
+    right: 0px;
+}
+
+.gg-progress-title {
+    color: #9dbfd4;
+    font-size: 12px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+
+.gg-nums {
+    text-align: center;
+    vertical-align: m;
+}
+
+.gg-nums h4 {
+    font-size: 26px;
+    color: #dfebf2;
+    display: inline;
+}
+
+span.gg-numsBadge {
+    margin-left: 20px;
+    font-size: 13px;
+    color: #fff;
+    vertical-align: top;
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+.gg-numsBadgeGreen {
+    background: #1fdcb6;
+}
+
+.gg-numsBadgeRed {
+    background: #ef7567;
+}
+
+span.gg-numsBw {
+    display: block;
+    text-align: left;
+    margin-left: 29%;
+    margin-top: 9px;
+    font-size: 12px;
+}
+
+.gg-numsBwGreen {
+    color: #1fdcb6;
+}
+
+.gg-numsBwRed {
+    color: #ff7779;
+}
+
+.gg-bigOneChart,.gg-bigInterChart,.gg-bigTwoChart {
+}
+
+.gg-bigOneCenterList {
+}
+
+.gg-bigOneCenterList ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gg-bigOneCenterList ul li {
+    margin-right: 5px;
+    padding: 10px 36px;
+}
+
+.gg-bigOneCenterList ul li p {
+    margin: 5px 5px;
+    font-size: 12px;
+    color: #92b5c9;
+}
+
+.gg-bigOneCenterList ul li p:nth-child(2) {
+    font-size: 18px;
+    color: #d3e2eb;
+}
+
+.bigT {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 10px;
+    letter-spacing: 26px;
+    color: #46DB95;
+}
+
+.gg-bigOneCenterScrollList {
+    text-align: center;
+    padding: 5px 50px;
+}
+
+.gg-scrollWord {
+}
+
+.gg-scrollWord p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gg-scrollWord p:first-child {
+    font-size: 15px;
+    opacity: 1;
+    animation: fP 7s linear 4s infinite alternate;
+    -moz-animation: fP 7s linear 4s infinite alternate;
+    /* Firefox */
+    -webkit-animation: fP 7s linear 4s infinite alternate;
+    /* Safari and Chrome */
+    -o-animation: fP 7s linear 4s infinite alternate;
+    /* Opera */
+}
+
+.gg-scrollWord p:nth-child(2n) {
+    font-size: 13px;
+    opacity: 0.6;
+    animation: mP 7s linear 4s infinite alternate;
+    -moz-animation: mP 7s linear 4s infinite alternate;
+    /* Firefox */
+    -webkit-animation: mP 7s linear 4s infinite alternate;
+    /* Safari and Chrome */
+    -o-animation: mP 7s linear 4s infinite alternate;
+    /* Opera */
+}
+
+.gg-scrollWord p:last-child {
+    font-size: 11px;
+    opacity: 0.4;
+    animation: lP 7s linear 4s infinite alternate;
+    -moz-animation: lP 7s linear 4s infinite alternate;
+    /* Firefox */
+    -webkit-animation: lP 7s linear 4s infinite alternate;
+    /* Safari and Chrome */
+    -o-animation: lP 7s linear 4s infinite alternate;
+    /* Opera */
+}
+
+.gg-scrollWordGreen {
+    color: #00f0ff;
+}
+
+.gg-scrollWordRed {
+    color: #ef7567 ;
+}
+
+.gg-scrollWordYellow {
+    color: #f5d663;
+}
+/*数字交替切换大小透明度*/
+@keyframes fP {
+    0% {
+        font-size: 15px;
+        opacity: 1
+    }
+
+    50% {
+        font-size: 11px;
+        opacity: 0.6
+    }
+
+    100% {
+        font-size: 13px;
+        opacity: 0.4
+    }
+}
+
+@keyframes mP {
+    0% {
+        font-size: 13px;
+        opacity: 0.6
+    }
+
+    50% {
+        font-size: 16px;
+        opacity: 1
+    }
+
+    100% {
+        font-size: 11px;
+        opacity: 0.4
+    }
+}
+
+@keyframes lP {
+    0% {
+        font-size: 9px;
+        opacity: 0.4
+    }
+
+    50% {
+        font-size: 12px;
+        opacity: 0.6
+    }
+
+    100% {
+        font-size: 16px;
+        opacity: 1
+    }
+}
+
+/*bigOne css end*/
+/*bigTwo css start*/
+.bigTwo {
+    width: 100%;
+    background: #263954;
+}
+@keyframes moveUp
+
+{
+    0% {top:0px;}
+
+    18% {top:0px;}
+
+    20% {top:-28px;}
+
+    38% {top:-28px;}
+
+    40% {top:-56px;}
+
+    58% {top:-56px;}
+
+    60% {top:-84px;}
+
+    78% {top:-84px;}
+
+    80% {top:-112px;}
+
+    98% {top:-112px;}
+
+}
+@-webkit-keyframes moveUp /*Safari and Chrome*/
+
+{
+
+    0% {top:0px;}
+
+    18% {top:0px;}
+
+    20% {top:-28px;}
+
+    38% {top:-28px;}
+
+    40% {top:-56px;}
+
+    58% {top:-56px;}
+
+    60% {top:-84px;}
+
+    78% {top:-84px;}
+
+    80% {top:-112px;}
+
+    98% {top:-112px;}
+
+}
+/*bigTwo css end*/
+/*bigInter css start*/
+.bigInter {
+    width: 100%;
+    background: #595959;
+}
+
+.interBigTitle {
+    margin: 25px 0 40px 0;
+    font-size: 24px;
+    color: #7ab4de;
+    letter-spacing: 16px;
+    position: relative;
+}
+
+.interBigTitle span:first-child {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.interBigTitle span {
+    font-size: 24px;
+    margin-left: 9px;
+}
+
+.bigDataTitle {
+    margin: 5px 0 10px 0;
+    font-size: 24px;
+    color: #7ab4de;
+    letter-spacing: 16px;
+    position: relative;
+    text-align: center;
+}
+
+.bigDataTitle span:first-child {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.bigDataTitle span {
+    font-size: 24px;
+    margin-left: 9px;
+}
+
+.interBigSelect {
+    width: 17%;
+    height: 24px;
+    padding: 0px 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 37px;
+    color: #fff;
+    background: #46515d;
+    border: none;
+}
+/*bigData index CSS*/
+.bigIndex {
+    background: url("../images/bigdata/dpBg1.png") no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.dpIndexLogo{
+    margin: 3% auto 1% auto;
+    width: 352px;
+    height: 81px;
+}
+.dpIndexLogo img{
+    width: 100%;
+    height: 100%;
+}
+.bdList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 790px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.bdList li.bdListItem {
+    padding: 16px 47px;
+    margin-right: 5px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    /* margin: 0 auto; */
+    border-radius: 8px;
+    width: 150px;
+}
+
+.bdList li.bdListItem:first-child {
+    padding: 20px 80px;
+    margin-left: -2px;
+    width:311px;
+}
+
+.bdList li.bdListItem >a {
+    color: #fff;
+    /* padding: initial; */
+    display: block;
+}
+
+.bdList li.bdListItem>a >i {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bdList li.bdListItem>a>span {
+    display: block;
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin: 10px 0px; */
+    padding: 10px 0px;
+}
+
+.bdListRedItem {
+    background: #be3c31;
+}
+.bdListRedItem:hover{
+    background:#f54e40 ;
+}
+.bdListOrangeItem {
+    background: #e48131;
+}
+.bdListOrangeItem:hover{
+    background:#ff9947 ;
+}
+.bdListBlueItem {
+    background: #2f82b9;
+}
+.bdListBlueItem:hover{
+    background: #45aaec;
+}
+.bdListGreenItem {
+    background: #20a186 ;
+}
+.bdListGreenItem:hover{
+    background: #27d0ac;
+}
+.bdListPurpleItem {
+    background: #b9117b ;
+}
+.bdListPurpleItem:hover{
+    background: #ef48b1;
+}
+.bdListLightPurpleItem {
+    background: #6a26cc ;
+}
+.bdListLightPurpleItem:hover{
+    background: #8f59de;
+}
+.bdListSPurpleItem {
+    background: #625fff ;
+}
+.bdListSPurpleItem:hover{
+    background: #7d7bfa;
+}
+.bdListGoldItem{
+    background: #ac7c03;
+}
+.bdListGoldItem:hover{
+    background: #be9d49;
+}
+
+.bdListDefaultItem {
+    background: #666666;
+    cursor: not-allowed;
+}
+.bdListDefaultItem > a{
+    cursor: not-allowed;
+}
+
+.bdListDefaultItem:hover{
+    background: #888484;
+}
+.bdListDefaultItem >a{
+    color: #b7b7b7 !important;
+}
+/*细分div的国际教育大屏*/
+.gg-bigDataContainer{
+    border: 1px solid #439bc4;
+    height: 100%;
+    padding: 0;
+}
+.bigDataBg{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(../images/bigdata/dpInterNewbg.png) no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    border: 10px solid #51585e;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg-login.png',sizingMethod='scale');
+}
+div.bigDataPolaroid{
+    width: 100%;
+    background: none;
+    color: #d6dadd;
+    margin-top: 8px;
+}
+.bigDataHeader{
+    margin: -24px 0px 12px 0;
+    font-size: 25px;
+    color: #faffff;
+    position: relative;
+    background: url(../images/bigdata/dpTitleBg.png) no-repeat center;
+    background-size: 45% 82%;
+    height: 70px;
+    line-height: 62px;;
+}
+.bigDataSelect {
+    width: 17%;
+    height: 24px;
+    padding: 0px 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 32px;
+    top: 37px;
+    color: #fff;
+    background: #46515d;
+    border: none;
+}
+.gg-bigDataChartBgL{
+    width: 100%;
+    background: url(../images/bigdata/dpItembgL.png) no-repeat center center;
+    background-size: 90% 100%;
+    padding-bottom: 5px;
+}
+
+.gg-bigDataChartBox{
+    margin: 30px 0px;
+    margin-top: -5px;
+}
+/*细分div的人事大屏*/
+.ibox-lightTitle{
+    color:#c8dde9;
+    font-size:14px;
+    padding: 8px 30px 7px;
+}
+.ibox-lightContent{
+    width: 100%;
+    color: inherit;
+    padding: 0px 20px 0px 20px;
+}
+.ibox-lightContent{
+    clear: both;
+}
+.ibox-lightContentL{
+    width: 41%;
+    display: inline-block;
+}
+.ibox-lightContentR{
+    width: 45%;
+    display: inline-block;
+    margin-left: -5px;
+    height: 121px;
+}
+.gg-bigDataChartRsBgOne{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgOne.png) no-repeat center center;
+    background-size: 90% 100%;
+    padding-bottom: 5px;
+}
+.gg-bigDataChartRsBgTwo{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgTwo.png) no-repeat center center;
+    background-size: 90% 100%;
+    padding-bottom: 5px;
+}
+.gg-bigDataChartRsBgThree{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgThree.png) no-repeat center center;
+    background-size: 99% 100%;
+    padding-bottom: 5px;
+}
+.gg-bigDataChartRsBgFour{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgFour.png) no-repeat center center;
+    background-size: 94% 100%;
+    padding-bottom: 5px;
+}
+.gg-bigDataChartRsBgFive{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgFive.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding-bottom: 5px;
+}
+.gg-bigDataChartRsBgSix{
+    width: 100%;
+    background: url(../images/bigdata/dpRsItembgSix.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding-bottom: 5px;
+}
+.gg-Rstable{
+    border: 1px solid #2887ad;
+}
+.gg-Rstable>tbody>tr>td{
+    white-space: nowrap;
+    border: 1px solid #2887ad;
+    font-size: 13px;
+    color:#f9ffff;
+    text-align: left;
+}
+
+/* bigData end */
+
+/*响应式相关代码*/
+@media screen and (max-width: 1400px) {
+    .ssEduAreaList {
+        position: absolute;
+        width: 200px;
+        top: -61px !important;
+        right: -11px !important;
+        background: rgba(15, 62, 101, 0);
+        color: #eee;
+        border: 1px solid rgba(49, 76, 107, 0.17);
+        border-radius: 5px;
+    }
+    .ssEduAreaInfo {
+        width: 250px;
+        position: absolute;
+        top: 255px !important;
+        right: -9px !important;
+        font-size: 13px;
+        padding: 8px 10px;
+        line-height: 22px;
+    }
+    .gg-bigOneCenterList ul li {
+        margin-right: 5px;
+        padding: 10px 28px;
+    }
+    .ibox-lightContentL{
+        width: 34% !important;
+        display: inline-block;
+    }
+    .ibox-lightContentR{
+        width: 50% !important;
+        display: inline-block;
+        margin-left: -5px;
+        height: 121px;
+    }
+    .ibox-linerContentL{
+        width: 34% !important;
+        margin-left:-30px;
+    }
+    .ibox-linerContentR{
+        width: 43% !important;
+
+    }
+    .ssEduDataMapChart{
+        margin-right: -50px;
+    }
+    .ssIndexList {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 810px !important;
+        margin: 20px auto;
+        margin-bottom: 0;
+    }
+    .ssIndexList li.ssIndexListItem {
+        padding: 4px 20px !important;
+        margin-right: 0px;
+        white-space: nowrap;
+        margin-bottom: 10px !important;
+        border-radius: 8px;
+        width: 385px !important;
+    }
+
+    .ssIndexList li.ssIndexListItem:last-child {
+        width: 785px !important;
+    }
+    .gg-darkBlueList ul li {
+        padding: 2px 15px !important;
+        font-size: 12px;
+    }
+    .ssVideoContentR{
+        width: 75% !important;
+        float: right;
+        margin: 0 40px !important;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    /* 大屏引导页自适应 */
+    .dpIndexLogo {
+        margin: 8% auto 7% auto;
+        width: 352px;
+        height: 81px;
+    }
+    .ssIndex-foot {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 12px;
+        margin-top: 65px !important;
+    }
+    /*大屏示例1自适应*/
+    .gg-bigOneChart div#pieChartOne {
+        height: 200px !important;
+    }
+
+    .gg-bigOneChart div#radaChart {
+        height: 335px !important;
+    }
+
+    .gg-bigOneChart div#barChartOne {
+        height: 246px !important;
+    }
+
+    .gg-bigOneChart div#lineChartOne {
+        height: 410px !important;
+    }
+
+    .gg-bigOneChart div#pieChartThree {
+        height: 226px !important;
+    }
+
+    .gg-bigOneCenterList ul li {
+        margin-right: 5px !important;
+        padding: 5px 50px !important;
+    }
+
+    .gg-bigOneChart div#pieChartTwo {
+        height: 495px !important;
+    }
+
+    /*大屏示例2自适应*/
+    .iboxContentList > li {
+        padding: 8px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .iboxContentList >li >span {
+        padding: 0px 0px;
+        text-align: center;
+        display: block;
+        width: 108px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 14px;
+    }
+    .gg-bigTwoChart div#btFunnelChart{
+        height: 375px !important;
+    }
+    .gg-bigTwoChart div#btMeterChart{
+        height: 193px !important;
+    }
+    .gg-bigTwoChart div#btLineBarChart{
+        height:  375px!important;
+    }
+    .gg-bigTwoChart div#btLineChartOne{
+        height: 170px !important;
+    }
+    .gg-bigTwoChart div#btBarChartOne{
+        height:202px  !important;
+    }
+    .gg-bigTwoChart div#btPieChartOne{
+        height:202px  !important;
+    }
+    .gg-bigTwoChart div#btPieChartTwo{
+        height: 202px !important;
+    }
+    .gg-bigTwoChart div#btPieChartThree{
+        height: 202px !important;
+    }
+    .gg-bigTwoChart div#btBarChartTwo{
+        height: 202px !important;
+    }
+
+    /*国际教育大屏自适应*/
+    .gg-bigInterChart div#interBarChartOne {
+        height: 210px !important;
+    }
+
+    .gg-bigInterChart div#interPieChartOne {
+        height: 215px !important;
+    }
+
+    .gg-bigInterChart div#interBarChartTwo {
+        height: 406px !important;
+    }
+
+    .gg-bigInterChart div#interMapChart {
+        height: 488px !important;
+    }
+
+    .gg-bigInterChart div#interBarChartThree {
+        height: 305px !important;
+    }
+
+    .gg-bigInterChart div#interBarChartFour {
+        height: 220px !important;
+    }
+
+    .gg-bigInterChart div#interPieChartTwo {
+        height: 307px !important;
+    }
+
+    .gg-bigInterChart div#interPieChartThree {
+        height: 305px !important;
+    }
+    /*职业教育教育大屏自适应*/
+    .gg-bigZZChart div#interBarChartOne {
+        height: 210px !important;
+    }
+
+    .gg-bigZZChart div#interPieChartOne {
+        height: 120px !important;
+    }
+
+    .gg-bigZZChart div#interBarChartTwo {
+        height: 335px !important;
+    }
+
+    .gg-bigZZChart div#interMapChart {
+        height: 480px !important;
+    }
+
+    .gg-bigZZChart div#interBarChartThree {
+        height: 305px !important;
+    }
+
+    .gg-bigZZChart div#interBarChartFour {
+        height: 220px !important;
+    }
+
+    .gg-bigZZChart div#interPieChartTwo {
+        height: 223px !important;
+    }
+
+    .gg-bigZZChart div#interPieChartThree {
+        height:  223px  !important;
+    }
+    /*细分大屏里面的自适应*/
+    .gg-bigDataChartContainer div#interBarChartOne {
+        height: 210px !important;
+    }
+
+    .gg-bigDataChartContainer div#interPieChartOne {
+        height: 156px !important;
+    }
+
+    .gg-bigDataChartContainer div#interBarChartTwo {
+        height: 390px !important;
+    }
+
+    .gg-bigDataChartContainer div#interMapChart {
+        height: 488px !important;
+    }
+
+    .gg-bigDataChartContainer div#interBarChartThree {
+        height: 305px !important;
+    }
+
+    .gg-bigDataChartContainer div#interBarChartFour {
+        height: 265px !important;
+    }
+
+    .gg-bigDataChartContainer div#interPieChartTwo {
+        height: 245px !important;
+    }
+
+    .gg-bigDataChartContainer div#interPieChartThree {
+        height: 245px !important;
+    }
+    /* 基础教育大屏自适应 */
+    .gg-bigJjChart div#interBarChartOne{
+        height: 252px !important;
+    }
+    .gg-bigJjChart div#interBarChartThree{
+        height: 350px !important;
+    }
+    .gg-bigJjChart div#jcjyMapChart{
+        height: 442px !important;
+    }
+    .gg-bigJjChart div#xqyePieChartOne{
+        height: 347px !important;
+    }
+    .hotTable{
+        height: 245px !important;
+    }
+}
+/**智慧校园大屏引导页*/
+.ssIndex{
+    background: url(../images/bigdata/smartSchoolIndexbg1.png) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    margin-top:-10px;
+}
+.ssIndex-head{
+    margin-top: 10px;
+}
+.ssIndexLogo{
+    margin: 0 0;
+    width: 223px;
+    height: 39px;
+}
+.ssIndexLogo img{
+    width: 100%;
+    height: 100%;
+}
+.ssIndexName{
+    color: #fff;
+    float: right;
+    margin-right: 10px !important;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.ssIndexTitle{
+    text-align: center;
+    color: #fff;
+    font-size: 44px;
+    margin: -15px 0;
+}
+.ssIndexList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 973px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+
+.ssIndexList li.ssIndexListItem {
+    padding: 16px 45px;
+    margin-right: 0px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    width: 455px;
+}
+
+.ssIndexList li.ssIndexListItem:last-child {
+    width: 938px;
+}
+
+.ssIndexList li.ssIndexListItem >a {
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.ssIndexList li.ssIndexListItem>a >i {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.ssIndexList li.ssIndexListItem>a>span {
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+}
+.ssIndex-foot{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+.ssIndex-foot p{
+    font-size: 14px;
+}
+/**
+智慧校园教育数据大屏样式
+ */
+.ssEduData{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background:url(../images/bigdata/smartSchoolIndexbg1.png) no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+div.polaroidSsEduData {
+    width: 100%;
+    position: relative;
+    background: rgba(7, 39, 113, 0.04);
+    color: #eee;
+    border: 1px solid #3b5aa0;
+    box-shadow: 9px 10px 4px -8px rgba(45, 109, 224, 0.2), -4px 3px 22px 3px rgba(100, 148, 255, 0.19);
+    margin-bottom: 0px;
+    margin: 10px 8px;
+    border-radius: 8px
+}
+.ibox-linerTitle{
+    color: #eee;
+    font-size: 14px;
+    padding: 5px 13px 5px;
+    background: -webkit-linear-gradient(left,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3));
+    min-height: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+.ibox-linerContent{
+    width: 100%;
+    color: inherit;
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.ibox-linerContent{
+    clear: both;
+}
+.ibox-linerContentL{
+    width: 36%;
+}
+.ibox-linerContentR{
+    width: 55%;
+}
+.ibox-linerContent .table{
+    margin-bottom: 0 !important;
+}
+.ssEduBadge{
+    margin-right: 3px;
+    line-height: 19px;
+}
+.gg-fontSize10 >tbody>tr>td{
+    font-size: 10px !important;
+}
+.gg-darkBlueList {
+    background: rgba(25, 76, 125, 0.59);
+    color: #eee;
+    width: 100%;
+    padding: 0 0px;
+    margin-left: 12px;
+    border: 1px solid #194065;
+    border-radius: 5px;
+}
+
+.gg-darkBlueList ul {
+}
+.gg-darkBlueList ul li:first-child{
+    white-space:nowrap;
+    background: -webkit-linear-gradient(left,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3)); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,#17395b,#123c60,#304365,rgba(40, 69, 105, 0.3));
+}
+.gg-darkBlueList ul li {
+    padding: 8px 15px;
+    /* border-bottom: 1px dotted #ddd; */
+    font-size: 12px;
+}
+
+.gg-darkBlueList ul li >h3 {
+    font-size: 16px;
+    margin: 3px auto;
+    letter-spacing: 1px;
+}
+
+.gg-darkBlueList ul li >span.gg-darkBlueTitle {
+    font-size: 13px;
+}
+
+span.gg-darkBlueNum {
+    font-weight:bold;
+}
+.gg-ssEduWaterTable{
+    margin-bottom:10px !important;
+}
+.gg-ssEduWaterTable> tbody  >tr>th{
+    white-space: nowrap;
+    border: 1px solid #2887ad;
+    font-size: 12px;
+    color: #f9ffff;
+    text-align: center;
+    padding: 1px 9px;
+}
+.gg-ssEduWaterTable> tbody >tr>td{
+    white-space: nowrap;
+    border: 1px solid #2887ad;
+    font-size: 10px;
+    color: #f9ffff;
+    text-align: right;
+    padding: 1px 9px;
+}
+.gg-ssEduWaterTable> tbody >tr>td:first-child{
+    text-align: center;
+}
+.ssEduAreaHead{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.ssEduArea{
+    position: relative;
+    color: #eee;
+}
+/* .ssEduAreaImg{
+    width: 415px;
+    height: 250px;
+    margin: 30px auto;
+    margin-top: 52px;
+    border-radius: 40%;
+    box-shadow: 5px 8px 2px 2px #012442;
+    transform: rotate(22deg);
+} */
+.ssEduAreaImg {
+    width: 420px;
+    height: 188px;
+    margin: 30px auto;
+    margin-top: 57px;
+    border-radius: 40%;
+    box-shadow: 2px 4px 2px 2px #012442;
+    transform: rotate(8deg);
+}
+.ssEduAreaImg img{
+    width:100%;
+    height: 100%;
+    border-radius: 43%;
+}
+.ssEduAreaMapContainer{
+    width: 250px;
+    position: absolute;
+    top: 230px;
+    left: 60px;
+}
+.ssEduAreaMap{
+    width: 100%;
+    height:200px;
+}
+.ssEduAreaInfo{
+    width: 250px;
+    position: absolute;
+    top: 260px;
+    right: 6px;
+    font-size: 13px;
+    padding: 8px 10px;
+    line-height: 22px;
+}
+.ssEduAreaInfo >p{
+    font-size: 13px;
+}
+.ssEduAreaDarkBg{
+    box-shadow: 9px 10px 4px -8px rgba(45, 109, 224, 0.2), -4px 3px 22px 3px rgba(100, 148, 255, 0.19);
+    background: rgba(15, 62, 101, 0);
+    border: 1px solid rgba(49, 76, 107, 0.17);
+}
+/* .ssEduAreaList {
+    position: absolute;
+    width: 200px;
+    top: -85px;
+    right: 6px;
+    background: rgba(15, 62, 101, 0);
+    color: #eee;
+    border: 1px solid rgba(49, 76, 107, 0.17);
+    border-radius: 5px;
+} */
+.ssEduAreaList {
+    position: absolute;
+    width: 200px;
+    top: -34px;
+    right: 41px;
+    background: rgba(15, 62, 101, 0);
+    color: #eee;
+    border: 1px solid rgba(49, 76, 107, 0.17);
+    border-radius: 5px;
+}
+
+.ssEduAreaList ul {
+}
+
+/* .ssEduAreaList ul li {
+    padding: 2px 11px;
+    font-size: 12px;
+} */
+.ssEduAreaList ul li {
+    padding: 9px 11px;
+    font-size: 12px;
+}
+.ssEduAreaList ul li:first-child{
+    background: rgba(6, 45, 117, 0.4);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.ssEduAreaList ul li >h3 {
+    font-size: 16px;
+    margin: 3px auto;
+    letter-spacing: 1px;
+}
+
+.ssEduAreaList ul li >span.gg-darkBlueTitle {
+    font-size: 13px;
+}
+div.anchorBL{
+    display: none !important;
+}
+div.anchorBL span{
+    display: none !important;
+}
+/*视频监控样式*/
+.ssVideoBg{
+    width:100%;
+    height:100%;
+    background:#1c1c1c;
+}
+.ssVideoHeader{
+    width: 100%;
+    height: 60px;
+    background: #141414;
+    border-bottom: 2px solid #373737;
+}
+.ssVideoHeader .ssVideoLogo{
+    float: left;
+    width: 200px;
+    height: 42px;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+.ssVideoHeader .ssVideoLogo img{
+    width: 100%;
+    height: 100%;
+}
+.ssVideoHeader .ssVideoSchool{
+    float: right;
+    margin-right: 12px;
+}
+.ssVideoSchool h3{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 55px;
+    vertical-align: middle;
+}
+.gg-ssVideoArrow{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    color: #afafaf;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.gg-ssVideoArrowUp{
+    transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+.gg-ssVideoArrowDown{
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+.clearfix{
+    clear: both;
+}
+.ssVideoContent{
+    width: 100%;
+}
+.ssVideoContentL{
+    width: 16%;
+    min-height: 600px;
+    border: 1px solid #000;
+    border-bottom: none;
+    float: left;
+}
+.ssVideoContentR{
+    width: 80%;
+    float: right;
+    margin: 0 30px;
+}
+.ssVideoArea{
+    width: 100%;
+    height: 100%;
+}
+.ssVideoAreaListOne{
+    width: 100%;
+    height: 690px;
+}
+.ssVideoAreaListOne > .ssVideoAreaListOneItem{
+    min-height: 55px;
+    line-height: 55px;
+    vertical-align: middle;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    background: #252525;
+    color: #eee;
+    cursor: pointer;
+    position: relative;
+}
+.ssVideoAreaListOne > .ssVideoAreaListOneItem:hover{
+    background: #1d1d1d;
+}
+.ssVideoAreaListOneItemActive{
+    background: #444444 !important;
+}
+.ssVideoAreaListOne > .ssVideoAreaListOneItem > .ssVideoAreaListOneLink{
+    color: #eee !important;
+    display: block;
+}
+.ssVideoAreaListOneItemPadding{
+    padding-bottom: 0 !important;
+}
+.ssVideoAreaListTwo{
+    display: none;
+    width: 100%;
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList{
+
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList > .ssVideoAreaListTwoItem{
+    position: relative;
+    padding: 0px 24px;
+    background: #222222;
+    text-align: center;
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList > .ssVideoAreaListTwoItem:hover{
+    background: #151515;
+}
+.ssVideoAreaListTwoItemActive{
+    background: #151515 !important;
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList > .ssVideoAreaListTwoItem:first-child{
+    border-top: 1px solid #0e0e0e;
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList > .ssVideoAreaListTwoItem:last-child{
+    border: none;
+}
+.ssVideoAreaListTwo > .ssVideoAreaListTwoList > .ssVideoAreaListTwoItem > .ssVideoAreaListTwoLink{
+    color: #7d7d7d !important;
+}
+.ssVideoContainer{
+    width:100%;
+    margin: 0 auto;
+}
+.ssVideoItem{
+    width: 100%;
+    height: 280px;
+    margin: 8px auto;
+}

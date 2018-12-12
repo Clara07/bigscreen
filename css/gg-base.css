@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/**
+* Created by Clara Guo 2018 0927
+**/
+html,body {width: 100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { font-size:14px; font-family:"Microsoft YaHei UI"; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:none; }
+a:link,a:visited,a:hover,a:active{text-decoration:none;color: #555555; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+.grayBg{
+    background: #ededed;
+}
+.gg-wrapper{width: 100%;overflow-x: hidden;}
+.mt8{margin-top: 8px}
+.mb8{margin-bottom: 8px;}
+.mt12{margin-top: 12px;}
+.mb12{margin-bottom: 12px;}
+.mt20{margin-top: 20px;}
+.mb20{margin-bottom: 20px;}
+.mb0{margin-bottom: 0px;}
+.whiteB{background: #ffffff;}

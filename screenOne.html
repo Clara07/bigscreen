@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大屏示例一</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/gg-bigdata.css">
+</head>
+<body class="bigOne"  onload="startClock()" onunload="stopClock()">
+    <div class="container-fluid main-content">
+        <div class="row">
+            <!--左侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3" style="padding: 0 0px !important;">
+                <div class="gg-bigOneLTop polaroid">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h4>目录分布</h4>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="gg-bigOneChart">
+                                <div class="echarts" id="pieChartOne" style="width: 100%; height: 145px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gg-bigOneLCenter polaroid">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="gg-bigOneChart">
+                                <div class="echarts" id="radaChart" style="width: 100%; height: 240px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gg-bigOneLBottom polaroid">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="gg-bigOneChart">
+                                <div class="echarts" id="barChartOne" style="width: 100%; height: 182px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间部分-->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="gg-bigOneCenter polaroid">
+                    <div class="ibox" style="margin-bottom: 0px">
+                        <div class="ibox-title">
+                            <h4>数据交换趋势</h4>
+                        </div>
+                        <div class="ibox-content" style="padding-bottom: 0;padding-top: 6px;">
+                            <!--数字趋势-->
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="gg-nums">
+                                        <h4>850,00</h4>
+                                        <span class="gg-numsBadge gg-numsBadgeGreen">20%↑</span>
+                                        <span class="gg-numsBw gg-numsBwGreen">● 换入</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <div class="gg-nums">
+                                        <h4>970,30</h4>
+                                        <span class="gg-numsBadge gg-numsBadgeRed">20%↑</span>
+                                        <span class="gg-numsBw gg-numsBwRed">● 换出</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--中间统计图-->
+                           <div class="gg-bigOneChart">
+                               <div class="echarts" id="lineChartOne" style="width: 100%;height: 279px;"></div>
+                           </div>
+                            <!--统计图底部数字-->
+                            <div class="gg-bigOneCenterList">
+                                <ul>
+                                    <li>
+                                        <p>No.1</p>
+                                        <p>850,00</p>
+                                        <p>2月</p>
+                                    </li>
+                                    <li>
+                                        <p>No.2</p>
+                                        <p>750,00</p>
+                                        <p>10月</p>
+                                    </li>
+                                    <li>
+                                        <p>No.3</p>
+                                        <p>650,00</p>
+                                        <p>11月</p>
+                                    </li>
+                                    <li>
+                                        <p>No.4</p>
+                                        <p>550,00</p>
+                                        <p>8月</p>
+                                    </li>
+                                    <li>
+                                        <p>No.5</p>
+                                        <p>450,00</p>
+                                        <p>3月</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!--中间环状图-->
+                            <div class="gg-bigOneChart">
+                                <div class="echarts" id="pieChartThree" style="width: 100%;height: 134px;"></div>
+                            </div>
+                            <!--环状图底部文字滚动-->
+                            <div class="gg-bigOneCenterScrollList">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
+                                        <div class="gg-scrollWord gg-scrollWordGreen">
+                                            <p>基教处app交换信息成功</p>
+                                            <p>职教处app交换信息成功</p>
+                                            <p>教育局app交换信息成功</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
+                                        <div class="gg-scrollWord gg-scrollWordRed">
+                                            <p>基教处app交换失败</p>
+                                            <p>职教处app交换失败</p>
+                                            <p>教育局app交换失败</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-md-4 col-lg-4">
+                                        <div class="gg-scrollWord gg-scrollWordYellow">
+                                            <p>基教处app交换中</p>
+                                            <p>职教处app交换中</p>
+                                            <p>教育局app交换中</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3" style="padding: 0px 0px !important;">
+                <div class="gg-bigOneRTop polaroid">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h4>最新发布</h4>
+                            <a class="gg-time" id="gg_rightNow"> </a>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="greenLabel">
+                                <div class="greenLabelImg">
+                                    <img src="images/bigdata/greenLabel.png"/>
+                                </div>
+                                <div class="greenContent">
+                                    <span>教育局</span>
+                                    <p>教师资格证书</p>
+                                    <span>申请教师证书接口</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gg-bigOneRCenter polaroid">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <div class="gg-bigOneChart">
+                                <div class="echarts" id="pieChartTwo" style="width: 100%;height: 283px;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="gg-bigOneRBottom polaroid">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h4>接口排名</h4>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="gg-progress">
+                                <div class="gg-progress-title">体检信息</div>
+                                <div class="gg-progress-value">58</div>
+                                <div class="gg-progress-bar" style="width: 58%;">
+                                </div>
+                            </div>
+                            <div class="gg-progress">
+                                <div class="gg-progress-title">体测信息</div>
+                                <div class="gg-progress-value">40</div>
+                                <div class="gg-progress-bar" style="width: 40%;">
+                                </div>
+                            </div>
+                            <div class="gg-progress">
+                                <div class="gg-progress-title">学生信息</div>
+                                <div class="gg-progress-value">36</div>
+                                <div class="gg-progress-bar" style="width: 36%;">
+                                </div>
+                            </div>
+                            <div class="gg-progress">
+                                <div class="gg-progress-title">学校信息</div>
+                                <div class="gg-progress-value">30</div>
+                                <div class="gg-progress-bar" style="width: 30%;">
+                                </div>
+                            </div>
+                            <div class="gg-progress">
+                                <div class="gg-progress-title">校舍信息</div>
+                                <div class="gg-progress-value">28</div>
+                                <div class="gg-progress-bar" style="width: 28%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--引用相关js框架-->
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/bootstrap.min.js"></script>
+<script src="plugins/echarts/echarts.min.js"></script>
+<!--引入主题-->
+<script src="plugins/echarts/macarons.js"></script>
+<!--大屏数据通用js-->
+<script src="js/gg-bigDataBasic.js"></script>
+<!--本界面相关的echar demo数据js-->
+<script src="js/gg-bigData1.js"></script>
+<script>
+    $(function(){
+        var conHeight=$(".main-content").outerHeight(true);
+        $("body").height(conHeight);
+        console.log( conHeight)
+    })
+</script>
+</html>

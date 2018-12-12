@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>大屏示例七</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/gg-bigdata.css">
+</head>
+
+<body class="ssEduData">
+    <div class="container-fluid main-content">
+        <div class="row">
+            <!--左侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <!--各级别员工数量及性别构成-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">各年级员工情况分析</div>
+                        <div class="ibox-linerContent">
+                            <div class="ibox-linerContentL">
+                                <table class="table table-condensed gg-Rstable gg-fontSize10">
+                                    <tr>
+                                        <td>班级</td>
+                                        <td>班额</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>高一班级数</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #2cabd3;">●</span>大班额班级数</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>高二班级数</td>
+                                        <td>32</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #2cabd3;">●</span>大班额班级数</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>高三班级数</td>
+                                        <td>31</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #2cabd3;">●</span>大班额班级数</td>
+                                        <td>11</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ibox-linerContentR">
+                                <div class="gg-ssEduDataChart">
+                                    <div class="echarts" id="ssEduDataBarChartOne" style="width: 100%;height: 200px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--生源区域分析-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">各年级员工情况分析</div>
+                        <div class="ibox-linerContent">
+                            <div class="ibox-linerContentL">
+                                <table class="table table-condensed gg-Rstable gg-fontSize10">
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>外市</td>
+                                        <td>412人</td>
+                                        <td>其中乡村:276</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>市直属</td>
+                                        <td>10人</td>
+                                        <td>其中乡村:2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>市南区</td>
+                                        <td>414人</td>
+                                        <td>其中乡村:35</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>市北区</td>
+                                        <td>451人</td>
+                                        <td>其中乡村:92</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>崂山区</td>
+                                        <td>91人</td>
+                                        <td>其中乡村:43</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>李沧区</td>
+                                        <td>201人</td>
+                                        <td>其中乡村:34</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>城阳区</td>
+                                        <td>238人</td>
+                                        <td>其中乡村:165</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>青西区</td>
+                                        <td>12人</td>
+                                        <td>其中乡村:6</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>即墨区</td>
+                                        <td>27人</td>
+                                        <td>其中乡村:13</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>平度市</td>
+                                        <td>22人</td>
+                                        <td>其中乡村:17</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>胶州市</td>
+                                        <td>12人</td>
+                                        <td>其中乡村:8</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #f9777e;">●</span>莱西市</td>
+                                        <td>9人</td>
+                                        <td>其中乡村:5</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                            <div class="ibox-linerContentR">
+                                <div class="gg-ssEduDataChart">
+                                    <div class="echarts" id="ssEduDataMapChart" style="width: 100%;height: 336px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--员工体质-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">贝利员工体质BMI情况</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-ssEduDataChart">
+                                <div class="echarts" id="ssEduDataPieChartTwo" style="width: 100%;height: 130px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--新高考选课师资配置分析-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">新高考选课师资配置分析</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-ssEduDataChart" style="margin-bottom: 10px">
+                                <div class="echarts" id="ssEduDataPieChartFour" style="width: 100%;height: 165px"></div>
+                            </div>
+                            <div class="gg-ssEduDataChart">
+                                <div class="echarts" id="ssEduDataPieChartFive" style="width: 100%;height: 170px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--中间部分-->
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="ssEduArea">
+                    <div class="ibox" style="height: 585px">
+                        <h3 class="ssEduAreaHead">大屏示例七</h3>
+                        <div class="ssEduArea">
+                            <div class="ssEduAreaImg">
+                                <img src="images/bigdata/ssedu.jpg">
+                            </div>
+                            <div class="ibox ssEduAreaDarkBg ssEduAreaMapContainer">
+                                <div class="ibox-title ibox-linerTitle">所在位置</div>
+                                <div class="ibox-lightContent noPadding">
+                                    <div class="ssEduAreaMap" id="ssEduAreaMap"></div>
+                                </div>
+                            </div>
+
+                            <div class="ssEduAreaDarkBg ssEduAreaInfo">
+                                <p>
+                                    在六十年的办学过程中，十五中以朴实的校风、务实的教风、扎实的学风以及实实在在稳步攀升的教学成绩，赢得了家长及社会的交口称赞。学校连续
+                                    二十年被评为市文明单位、市文明标兵，还是山东省职业道德标兵单位、山东省教育先进集体、全国贯彻体育条例优秀学校、全国民主管理先进集体，也是
+                                    贝利市属学校唯一的“三标兵”单位。
+                                </p>
+                            </div>
+                            <div class="ssEduAreaDarkBg ssEduAreaList">
+                                <ul>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">校园信息</span>
+                                    </li>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">占地面积:276亩</span>
+                                    </li>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">建筑面积:10.9万平方米</span>
+                                    </li>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">创建于:1953年</span>
+                                    </li>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">办学类型:高级中学</span>
+                                    </li>
+                                    <li>
+                                        <span class="gg-darkBlueTitle">主管单位:贝利市教育局</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!--互联网访问流量-->
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">互联网访问流量监测(Gbps)</div>
+                        <div class="ibox-lightContent ssEduAreaDarkBg">
+                            <div class="gg-ssEduDataChart">
+                                <div class="gg-ssEduDataChart">
+                                    <div class="echarts" id="ssEduDataLineChartTwo" style="width: 100%;height: 270px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--教育城域网流量情况-->
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">互联网访问流量监测(Gbps)</div>
+                        <div class="ibox-lightContent ssEduAreaDarkBg">
+                            <div class="gg-ssEduDataChart">
+                                <div class="gg-ssEduDataChart">
+                                    <div class="echarts" id="ssEduDataLineChartThree" style="width: 100%;height: 270px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右侧部分-->
+            <div class="col-sm-3 col-md-3 col-lg-3">
+                <!--教师年龄分布-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">本校教师年龄分布统计</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-ssEduDataChart">
+                                <div class="echarts" id="ssEduDataBarChartTwo" style="width: 100%;height: 200px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--教师学历分布-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">本校教师年龄分布统计</div>
+                        <div class="ibox-linerContent">
+                            <div class="ibox-linerContentL">
+                                <div class="gg-bigDataChartRs">
+                                    <div class="echarts" id="ssEduDataPieChartOne" style="width: 100%;height: 150px"></div>
+                                </div>
+                                <table class="table table-condensed gg-Rstable">
+                                    <tr>
+                                        <td style="letter-spacing: 10px">学历</td>
+                                        <td>人数</td>
+                                        <td>占比</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #2ec7c9;">■</span>博士</td>
+                                        <td>13</td>
+                                        <td>0.02%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #b6a2de;">■</span>硕士</td>
+                                        <td>3780</td>
+                                        <td>5.15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #5ab1ef;">■</span>本科</td>
+                                        <td>60999</td>
+                                        <td>83.05%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #ffb980;">■</span>专科</td>
+                                        <td>7685</td>
+                                        <td>10.46%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #d87a80;">■</span>高中</td>
+                                        <td>961</td>
+                                        <td>1.31%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #8d98b3;">■</span>初中</td>
+                                        <td>12</td>
+                                        <td>0.02%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="ibox-linerContentR">
+                                <div class="gg-darkBlueList">
+                                    <ul>
+                                        <li>
+                                            <h3>主要教师奖励</h3>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                省教学能手
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                齐鲁名师
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                贝利市教育系统拔尖人才
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                贝利名师
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                贝利市教学能手
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="gg-darkBlueTitle">
+                                                特级教师
+                                                <span class="gg-darkBlueNum">12</span>
+                                                人
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--生师比分布-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">生师比11.5:1,师资力量充足</div>
+                        <div class="ibox-lightContent noPadding">
+                            <div class="gg-ssEduDataChart">
+                                <div class="echarts" id="ssEduDataPieChartThree" style="width: 100%;height: 130px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--校园昨日用水量统计和实时耗电排行-->
+                <div class="polaroidSsEduData">
+                    <div class="ibox">
+                        <div class="ibox-title ibox-linerTitle">校园用水用电分析</div>
+                        <div class="ibox-lightContent">
+                            <div class="gg-ssEduDataChart">
+                                <div class="echarts" id="ssEduDataLineChartOne" style="width: 100%;height: 150px"></div>
+                            </div>
+                            <div class="">
+                                <table class="table table-condensed gg-ssEduWaterTable">
+                                    <tr>
+                                        <td colspan="3" style="font-size: 13px;font-weight: 600;padding: 9px;letter-spacing: 2px">校园昨日总用水量:124m³</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="letter-spacing: 10px">教学楼</th>
+                                        <th>用水量(m³)</th>
+                                        <th>排名</th>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #d87a80;">■</span>一号教学楼</td>
+                                        <td>961</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #ffb980;">■</span>六号实验楼</td>
+                                        <td>100</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #b6a2de;">■</span>三号教学楼</td>
+                                        <td>120</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #2ec7c9;">■</span>五号教学楼</td>
+                                        <td>130</td>
+                                        <td>4</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="ssEduBadge" style="color: #5ab1ef;">■</span>四号教学楼</td>
+                                        <td>110</td>
+                                        <td>5</td>
+                                    </tr>
+
+
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--引用相关js框架-->
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/bootstrap.min.js"></script>
+<script src="plugins/echarts/echarts.min.js"></script>
+<!--引入主题-->
+<script src="plugins/echarts/macarons.js"></script>
+<!--引入贝利js-->
+<script src="plugins/echarts/qingdao.js"></script>
+<!--引入百度地图-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2vZOVYx2Dq67AtfhYr8z9TECL7CeSxgy"></script>
+<!--大屏数据通用js-->
+<script src="js/gg-bigDataBasic.js"></script>
+<!--本界面相关的echar demo数据js-->
+<script src="js/gg-smartSchoolEduData.js"></script>
+<script type="text/javascript">
+    //生成地图坐标
+    // 百度地图API功能
+    var map = new BMap.Map("ssEduAreaMap");
+    var point = new BMap.Point(116.451972,39.965122);
+    map.centerAndZoom(point, 9);
+    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);               // 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+</script>
+
+</html>

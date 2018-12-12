@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/common/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/common/css/init.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="body-bg">
+        <div class="body-head"></div>
+        <div class="main-body clearfix">
+            <div class="left-content pull-left">
+                <div class="title-head">
+                    三个增长两个比例情况
+                </div>
+                <!-- 公共财政教育支出增长率与财政经常性收入增长率 -->
+                <div class="info-group">
+                    <div class="info-title">
+                        <span class="info-title-left"></span>
+                        <i>公共财政教育支出增长率与财政经常性收入增长率</i>
+                        <span class="info-title-right"></span>
+                    </div>
+                    <div class="info-box">
+                        <div id="publicEduAdd" style="width:100%;height:190px;"></div>
+                    </div>
+                </div>
+                <!-- 2011-2015年“生均公共财政预算公用经费支出”增长情况 -->
+                <div class="info-group">
+                    <div class="info-title">
+                        <span class="info-title-left"></span>
+                        <i>2011-2015年“生均公共财政预算公用经费支出”增长情况</i>
+                        <span class="info-title-right"></span>
+                    </div>
+                    <div class="info-box">
+                        <div id="publicFceAdd" style="width:100%;height:270px;"></div>
+                    </div>
+                </div>
+                <!-- 2011-2016“生均公共财政预算教育事业费支出情况” -->
+                <div class="info-group">
+                    <div class="info-title">
+                        <span class="info-title-left"></span>
+                        <i>2011-2016“生均公共财政预算教育事业费支出情况”</i>
+                        <span class="info-title-right"></span>
+                    </div>
+                    <div class="info-box">
+                        <div id="publicFcePay" style="width:100%;height:270px;"></div>
+                    </div>
+                </div>
+                <!-- “两个比例”指标情况 -->
+                <div class="info-group">
+                    <div class="info-title">
+                        <span class="info-title-left"></span>
+                        <i>“两个比例”指标情况</i>
+                        <span class="info-title-right"></span>
+                    </div>
+                    <div class="info-box">
+                        <div id="publicDoubleAdd" style="width:100%;height:190px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-content pull-left">
+                <div class="center-title">
+                    青岛市教育局计划财务情况概览
+                </div>
+                <ul class="label-group">
+                    <li>
+                        <span>2014年教育经费总收入</span>
+                        <b>236<i>亿</i></b>
+                    </li>
+                    <li>
+                        <span>2015年教育经费总收入</span>
+                        <b>264.65<i>亿</i></b>
+                    </li>
+                    <li>
+                        <span>2016年教育经费总收入</span>
+                        <b>288.79<i>亿</i></b>
+                    </li>
+                </ul>
+                <div class="qd-map">
+                    <div id="qingdaoMap" style="width:100%;height:100%;"></div>
+                </div>
+                <div class="bottom-group">
+                    <div class="title-head">
+                        2016年分区、市“生均公共财政预算公用费支出”情况
+                    </div>
+                    <div class="bottom-center">
+                        <div id="publicExpenditure" style="width: 100%; height: 100%;"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-content pull-right">
+                <div class="right-group">
+                    <div class="title-head">
+                        2011-2017年青岛市各类教育经费收入情况
+                    </div>
+                    <div class="right-box">
+                        <div id="eduEarn" style="width: 100%;height: 100%;"></div>
+                    </div>
+                </div>
+                <div class="right-group">
+                    <div class="title-head">
+                        2017年各级各类学校教育经费收入构成
+                    </div>
+                    <div class="right-box">
+                        <div id="eduCNYmln" style="width: 100%;height: 100%;"></div>
+                    </div>
+                </div>
+                <div class="right-group">
+                        <div class="title-head">
+                                2011-2016年“公共财政教育支出占公共财政预算支出的比例”情况
+                        </div>
+                        <div class="right-box">
+                            <div id="eduBudgetSpend" style="width: 100%;height: 100%;"></div>
+                        </div>
+                    </div>
+                <div class="right-group">
+                    <div class="title-head">
+                        2016年分区、市“生均公共财政预算教育事业费支出”情况
+                    </div>
+                    <div class="right-box">
+                        <div id="eduOperatingSpend" style="width: 100%;height: 100%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="assets/common/js/jquery-1.9.1.min.js"></script>
+<script src="assets/common/js/bootstrap.min.js"></script>
+<script src="assets/common/js/echarts.min.js"></script>
+<script src="assets/common/js/qingdao.js"></script>
+<script src="assets/js/echarts-init.js"></script>
+<script>
+    $(function () {
+        publicEduAdd();
+        publicFceAdd();
+        publicFcePay();
+        publicDoubleAdd();
+        qingdaoMap();
+        publicExpenditure();
+        eduEarn();
+        eduCNYmln();
+        eduBudgetSpend();
+        eduOperatingSpend();
+    });
+</script>
+
+</html>

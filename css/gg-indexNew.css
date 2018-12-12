@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/**
+* Created by Clara Guo 2018 0927
+**/
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei UI";
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+/*header*/
+.gg-Iheader {
+    width: 1200px;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    height: 45px;
+    margin: 0 auto;
+}
+
+.gg-Iheader .gg-IhLogo {
+    width: 145px;
+    height: 32px;
+    margin-top: -3px;
+    float: left;
+    margin-top: 0px !important;
+    margin-left: 8px;
+}
+
+.gg-IhLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.gg-Iheader .gg-IhList {
+    line-height: 25px;
+    /* margin-left: 32%; */
+    float: right;
+    margin-top: 10px;
+}
+
+.gg-IhList ul {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+}
+
+.gg-IhList ul li {
+    padding: 2px 8px;
+    margin-right: 2px;
+}
+
+.gg-IhList ul li:hover {
+    background: #e9a439;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.gg-IhList ul li.active {
+    background: #e9a439;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.gg-IhList ul li.active a {
+    color: #fff;
+}
+
+.gg-IhList ul li a {
+    padding: inherit;
+    font-size: 12px;
+    color: #333;
+}
+
+.gg-IhList ul li a:hover {
+    color: #fff;
+}
+
+.gg-IhList ul li a i {
+    padding: 0px 2px;
+    font-size: 12px;
+}
+
+/*lunbo*/
+.swiper-container {
+    width: 100%;
+    max-width: 1920px;
+    height: 463px;
+    box-shadow: 0px 0px 8px #e8e8e8;
+}
+
+@media screen and (max-width: 1600px) {
+    .swiper-container {
+        width: 100%;
+        max-width: 1920px;
+        height: 330px;
+        box-shadow: 0px 0px 8px #e8e8e8;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #efaf17 !important;
+    border: none !important;
+}
+
+.swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: #000;
+    opacity: 0.1;
+    border: 1px solid #fff;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/*Info News*/
+.gg-InfoContainer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-self: baseline;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.gg-InfoContainer .gg-InfoL {
+    width: 30%;
+    margin-right: 20px;
+    padding: 13px 12px;
+}
+
+.gg-InfoNewsImg {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 16px;
+}
+
+.gg-InfoNewsImg img {
+    width: 100%;
+}
+
+.gg-InfoNewsItem {
+    padding: 5px 0px;
+}
+
+.gg-InfoNewsItem .gg-newsTitle {
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 5px 0px;
+    color: #333;
+}
+
+.gg-InfoNewsItem .gg-newsDesc {
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+    color: #999 !important;
+    width: 100%;
+}
+
+.gg-InfoNewsItem .gg-newsDesc a {
+    color: #999 !important;
+    line-height: 22px;
+}
+
+.gg-InfoNewsItem .gg-newsDesc:after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0px 2px 45px;
+}
+
+.gg-newsDescV {
+    width: 80% !important;
+}
+
+.gg-InfoNewsItem .gg-newsDate {
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+    font-size: 11px;
+    color: #999;
+}
+
+.gg-InfoContainer .gg-InfoC {
+    width: 43%;
+    padding: 10px 12px;
+}
+
+.gg-InfoListTitle {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.gg-InfoListTitle p {
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 3px solid #efaf17;
+    margin-bottom: -2px;
+}
+
+.gg-InfoListTitle a {
+    height: 18px;
+    background: #efaf17;
+    color: #fff !important;
+    margin-left: 70%;
+    border-radius: 8px;
+    font-size: 11px;
+    width: 50px;
+    padding: 0px 5px;
+}
+
+.gg-InfoListContent {
+    padding: 3px 10px;
+}
+
+.gg-InfoListContent ul {
+}
+
+.gg-InfoListContent ul li {
+}
+
+.gg-InfoListContent ul li.gg-InfoNewsItem {
+    position: relative;
+}
+
+.gg-InfoListContent ul li.gg-InfoNewsItem:hover {
+}
+
+.gg-InfoContainer .gg-InfoR {
+    width : 30%;
+    padding: 10px 0px;
+    padding-bottom: 0px;
+}
+
+.gg-logo {
+    width: 100%;
+    border: 1px solid #d5dae7;
+}
+
+.gg-logo .gg-logoH {
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #12a3ff , #0e99f4,#0e89de,#0c7dcd);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#12a3ff , #0e99f4,#0e89de,#0c7dcd);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#12a3ff , #0e99f4,#0e89de,#0c7dcd);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #12a3ff , #0e99f4,#0e89de,#0c7dcd);
+}
+
+.gg-logoC {
+    padding: 10px 20px;
+    padding-top: 0px;
+}
+
+.gg-logoCTitle {
+    padding: 12px 0px;
+    width: 100%;
+}
+
+.gg-logoCTitle .gg-logoCItem {
+    border-right: 1px solid #c9ced9;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #bdbdbd;
+}
+
+.gg-logoCTitle .gg-logoCItem:hover,.gg-logoCTitle .gg-logoCItem:active {
+    color: #0e97f1;
+}
+
+.gg-logoCTitle .gg-logoCItemActive {
+    color: #0e97f1;
+}
+
+.gg-logoCTitle .gg-logoCItem p {
+}
+
+.gg-logoCForm {
+}
+
+.gg-logoM {
+    display: none;
+}
+
+.gg-logoCForm .form-group {
+}
+
+.gg-logoCForm .form-group-inline {
+    display: flex;
+}
+
+.gg-EnterContainer {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 2px 0px;
+    padding-bottom: 25px;
+    box-shadow: 0px 0px 8px #e8e8e8;
+}
+
+.gg-EnterList {
+    display: flex;
+    justify-content: center;
+    align-self: baseline;
+}
+
+.gg-EnterList li {
+    padding: 10px 10px;
+    margin-right: 109px;
+    width: 92px;
+    height: 90px;
+    text-align: center;
+}
+
+.gg-EnterList li:last-child {
+    margin-right: 0px;
+}
+
+.gg-EnterList li a {
+    overflow: hidden;
+}
+
+.gg-EnterList li img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.gg-EnterList li img:hover {
+    transform: scale(1.2);
+}
+
+.gg-logoBtns {
+    text-align: center;
+    margin: 3px 0px;
+    padding-top: 10px;
+}
+
+.gg-formControl {
+    padding: 0px 10px 0 34px;
+    background-position: 5px 4px !important;
+    border-radius: 5px;
+}
+
+.gg-formcU {
+    background: url(../images/user.png) no-repeat;
+}
+
+.gg-formcP {
+    background: url(../images/pwd.png) no-repeat;
+}
+
+/*footer*/
+.gg-footer {
+    background: #30333a;
+}
+
+.gg-footer-container {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gg-footerImg {
+    width: 85px;
+    height: 84px;
+}
+
+.gg-footerImg img {
+    width: 100% ;
+    height: 100%;
+}
+
+.gg-footerInfo {
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.gg-footerInfo h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gg-footerInfo p {
+    margin-bottom: 10px;
+}
+
+.gg-footerContactU {
+    padding: 10px 20px;
+    line-height: 68px;
+}
+
+.gg-footerContactU p {
+    margin-top: -41px;
+}
+
+.gg-footerContactU p img {
+}
+
+/*我的应用界面*/
+.gg-appMainList {
+    display: none;
+}
+
+.gg-appLeftMenu {
+    width: 100%;
+}
+
+.gg-appLeftMenu .gg-appUlOne {
+    width: 100%;
+}
+
+.gg-appLeftMenu .gg-appUlOne > .gg-appUlOneItem {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    line-height: 25px;
+    position: relative;
+}
+
+.oneItemActive {
+    background-color: #ffffff;
+    border-color: #00B552 !important;
+    z-index: 2;
+}
+
+.oneItemActive > a {
+    color: #00B552 !important;
+}
+
+.gg-appLeftMenu .gg-appUlOne > .gg-appUlOneItem:hover {
+    background-color: #ffffff;
+    z-index: 2;
+    border-color: #00B552;
+}
+
+.gg-appLeftMenu .gg-appUlOne > .gg-appUlOneItem:nth-child(3):hover {
+    background-color: #ffffff;
+    z-index: 2;
+    border-color: #00B552 #fff #00B552 #00B552;
+}
+
+.gg-appLeftMenu .gg-appUlOne > .gg-appUlOneItem:nth-child(4):hover {
+    background-color: #ffffff;
+    z-index: 2;
+    border-color: #00B552 #fff #00B552 #00B552;
+}
+
+.gg-appLeftMenu .gg-appUlOne .gg-appUlOneItem a {
+    height: 100%;
+    color: #333;
+    padding: 10px 0px;
+    width: 100%;
+    display: block;
+}
+
+.gg-appChildMenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -77%;
+    width: 200px;
+    z-index: 1000;
+    background: #fff;
+}
+
+.gg-appChildMenu .gg-appUlTwo {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.gg-appChildMenu .gg-appUlTwo li {
+}
+
+.gg-appChildMenu .gg-appUlTwo li:hover {
+}
+
+.gg-appChildMenu .gg-appUlTwo li a {
+}
+
+.gg-appChildMenu .gg-appUlTwo li a:hover {
+    color: #00B552;
+}
+
+.gg-appRightMain {
+    width: 100%;
+}
+
+.gg-appMainContainer {
+    width: 100%;
+}
+
+.gg-appMainList {
+    width: 100%;
+    background-color: #fff;
+}
+
+.gg-appMainList ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    min-height: 371px;
+}
+
+.gg-appMainList ul li {
+    padding: 12px 29px;
+    position: relative;
+    text-align: center;
+    flex: 0 0 25%;
+    box-sizing: border-box;
+    max-height: 165px;
+}
+
+.gg-appMainList ul li:hover {
+    background-color: #e8e8e8
+}
+
+.gg-appMainList ul li a {
+    display: block;
+}
+
+.gg-appMainList ul li a img {
+    width: 110px;
+    height: 110px;
+}
+
+.gg-appMainList ul li a p {
+    font-size: 12px;
+    padding-top: 8px;
+    color: #555;
+}
+
+.gg-appMainList ul li .gg-appClBtn {
+    position: absolute;
+    top: 0;
+    right: 41px;
+    font-size: 16px;
+    color: #aeaeae;
+    cursor: pointer;
+}
+
+.gg-appMainList ul li .gg-appClBtn:hover {
+    color: #dc2121;
+}
+
+.gg-SearchLeft {
+    width: 23%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.gg-SearchRight {
+    width: 24%;
+    display: inline-block;
+    float: right;
+}
+
+.gg-SearchRight .gg-SearchInput {
+}
+.gg-searchIcon{
+    background: url(../images/search.png) no-repeat;
+    width: 23px;
+    height: 23px;
+    z-index: 5;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+}

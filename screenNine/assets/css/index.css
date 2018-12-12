@@ -1,0 +1,414 @@
+@charset"UTF-8";
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+p,ul,li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/body-bg.jpg) top center no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+ /* 头部两侧旋转火轮  */
+.top-rotate .left-rotate,.top-rotate .right-rotate {
+    position: absolute;
+    top:-2%;
+    width: 102px;
+    height: 108px;
+}
+.top-rotate .left-rotate>img,.top-rotate .right-rotate>img {
+    vertical-align: top;
+    position: relative;
+    z-index: 99;
+}
+.top-rotate .left-rotate {
+    left: 0.5%;
+}
+.top-rotate .right-rotate {
+    right: 0.5%;
+}
+@-webkit-keyframes spin {
+                from {
+                    -webkit-transform: rotate(0deg);
+                }
+                to {
+                    -webkit-transform: rotate(360deg);
+                }
+            }
+            
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+.top-rotate .left-rotate>img,.top-rotate .right-rotate>img {
+     -webkit-animation: spin 2s linear 2s 5 alternate;
+     animation: spin 1s linear infinite;
+}
+ /* 头部展示区域 */
+ .top-show {
+     width:88%;
+     min-height: 20px;
+     /* background: red; */
+     margin: 0 auto;
+     margin-top: 2%;
+ }
+.left-show,.right-show {
+    width: 34%;
+    min-height: 30px;
+    /* background: pink; */
+}
+.middle-title {
+    width: 100%;
+    /* margin: 0 40%; */
+    min-height: 70px;
+    /* background:purple; */
+    text-align: center;
+    padding: 0 40%;
+    line-height: 70px;
+    font-size: 34px;
+    color: #fff;
+    position: relative;
+    margin-top: -35px;
+}
+.left-show li,.right-show li {
+    float: left;
+    width: 48%;
+    height: 48px;
+    background: #061359;
+    opacity: 0.8;
+    padding: 5px 20px;
+    margin-right: 2%;
+    position: relative;
+
+}
+.four-corners .corner {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    
+}
+.four-corners .corner>img {
+    vertical-align: top;
+}
+.four-corners .corner.corner1 {
+    top: 0;
+    left: 0;
+}
+.four-corners .corner.corner2 {
+    top: 0;
+    right: 0;
+}
+.four-corners .corner.corner3 {
+    bottom: 0;
+    left: 0;
+}
+.four-corners .corner.corner4 {
+    bottom: 0;
+    right: 0;
+}
+.infinate {
+    animation-iteration-count: infinite;
+}
+.left-show li .single-show-text,.right-show li .single-show-text{
+    color: #00f0ff;
+}
+.left-show li .single-show-num .big-num {
+    font-size:30px;
+    color: #ffea00;
+    font-style: italic;
+    font-weight: 600;
+
+}
+.left-show li .single-show-num .unit-label {
+    text-align: right;
+     color: #ffea00;
+     font-size: 18px;
+     line-height: 18px;
+}
+.left-show li .single-show-num .unit-zh {
+    color: #f5e107;
+}
+.right-show li .single-show-num .big-num {
+    font-size: 30px;
+    color: #4eff00;
+    font-weight: 600;
+    font-style: italic;
+}
+.right-show li .single-show-num .unit-label {
+    text-align: right;
+     color: #4eff00;
+     font-size: 18px;
+     line-height: 18px;
+
+}
+.right-show li .single-show-num .unit-zh {
+    color: #39bf2d;
+}
+/* 中间内容区域 */
+.main-content {
+    width:92%;
+    min-height: 400px;
+    /* background: red; */
+    margin: 1% auto 0;
+}
+.content-left,.content-right {
+    width: 30%;
+    /* background: pink; */
+    min-height: 200px;
+}
+.content-middle {
+    width: 38%;
+    margin: 0 1%;
+    /* background: purple; */
+     min-height: 200px;
+}
+.module {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background:rgba(0,74,186,.3);
+}
+.withleftT::before {
+    display: inline-block;
+    content: "";
+    width:0;
+    height:0;
+    border-width:0 50px 50px;
+    border-style:solid;
+    border-color:transparent transparent #080c2e;/*透明 透明  灰*/
+    transform: rotate(-46deg);
+    position: absolute;
+    top:-8px;
+    left: -34px;
+}
+.withrightT::before {
+     display: inline-block;
+    content: "";
+    width:0;
+    height:0;
+    border-width:0 50px 50px;
+    border-style:solid;
+    border-color:transparent transparent #080c2e;/*透明 透明  灰*/
+    transform: rotate(46deg);
+    position: absolute;
+    top:-8px;
+    right: -34px;
+}
+.module-title {
+    width: 350px;
+    height: 32px;
+    line-height: 32px;
+    background: url(../images/moduleTitle-bg.png) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.moduleTitle-corners .modulTitle-left>img,.moduleTitle-corners .modulTitle-right>img {
+    vertical-align: top;
+}
+.moduleTitle-corners .modulTitle-left {
+    width: 35px;
+    height: 9px;
+    position: absolute;
+    left: 7px;
+    bottom: -3px;
+}
+.moduleTitle-corners .modulTitle-right {
+    width: 35px;
+    height: 9px;
+    position: absolute;
+    right: 7px;
+    bottom: -3px;
+}
+.module-con {
+    width: 93%;
+    margin: 2% auto 0;
+    /* background: red; */
+    min-height: 100px;
+}
+.help-wrap {
+    width: 30%;
+    /* background: purple; */
+    min-height:50px;
+}
+.help-wrap .help-title {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    padding-left: 14%;
+    background: url(../images/help-title.png) no-repeat;
+    background-size: cover;
+}
+.help-wrap .single-help {
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    margin-top: 10px;
+    /* padding: 0 10px; */
+    color: #fff;
+    position: relative;
+}
+.help-wrap .single-help .single-help-left,.help-wrap .single-help .single-help-right {
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
+}
+.help-wrap .single-help .single-help-left {
+    background: rgba(0,85,212,.31);
+}
+
+.help-wrap .single-help.whole-bg .single-help-right  {
+    color: #f0ff03;
+    font-style: normal;
+}
+.help-wrap .single-help.whole-bg .blue-text {
+    color: #03c1ff;
+}
+.help-wrap .single-help.whole-bg {
+    background: rgba(0,85,212,.31);
+}
+.help-corners span {
+    position: absolute;
+    width: 9px;
+    height: 12px;
+}
+.help-corners span>img {
+    vertical-align: top;
+}
+.help-corners .help-corner1 {
+    top:0;
+    left:0;
+}
+.help-corners .help-corner2 {
+    top:0;
+    right:0;
+}
+.help-corners .help-corner3 {
+    bottom:0;
+    left:0;
+}
+.help-corners .help-corner4 {
+    bottom:0;
+    right:0;
+}
+.help-wrap .help-list {
+    background: #0055d44f;
+    position: relative;
+}
+.help-wrap .help-list::before {
+    position: absolute;
+    content: "";
+    width:0;
+    height:0;
+    border-width:0 10px 10px;
+    border-style:solid;
+    border-color:transparent transparent rgba(0,85,212,.31);/*透明 透明  灰*/
+    top: -10px;
+    left: 22%;
+}
+#leftContainer1,
+#rightContainer1,
+#leftContainer2,
+#rightContainer2,
+#leftContainer3,
+#rightContainer3 {
+    width: 100%;
+    height: 270px;
+}
+
+/* 2017年青岛市学前教育政府资助资金区域分布 */
+#qdmap {
+    width: 70%;
+    height: 480px;
+    position: relative;
+    margin-right: -10px;
+}
+/* 2017年青岛市业务教育政府资助资金区域分布 */
+#middleContainer {
+    width: 100%;
+    height: 370px;
+}
+
+.border {
+    border: 1px solid #0342af;
+}
+.marginTop20 {
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1440px) {
+    .top-rotate .left-rotate, .top-rotate .right-rotate {
+        top:-1.5%;
+        width: 80px;
+        height: 90px;
+    }
+    .top-rotate .left-rotate>img, .top-rotate .right-rotate>img {
+        width: 100%;
+    }
+    .top-rotate .left-rotate {
+        left: 0;
+    }
+    .top-rotate .right-rotate {
+        right: 0;
+    }
+    .top-show {
+        margin-top: 3%;
+    }
+    .withleftT::before ,
+    .withrightT::before{
+        border-width: 0 35px 35px;
+    }
+    .middle-title {
+        font-size: 28px;
+        margin-top: -28px;
+    }
+    .left-show li, .right-show li {
+        padding: 5px 2%;
+    }
+    .left-show li .single-show-num .big-num,
+    .right-show li .single-show-num .big-num {
+        font-size: 20px;
+        margin-top: 6px;
+    }
+    .left-show li .single-show-num .unit-label,
+    .right-show li .single-show-num .unit-label {
+        font-size: 12px;
+    }
+    .left-show li .single-show-num .unit-zh,
+    .right-show li .single-show-num .unit-zh {
+        font-size: 12px;
+    }
+    .main-content {
+        margin-top: 1.5%;
+    }
+    .module-title {
+        width: 306px;
+    }
+    .module-con {
+        width: 96%;
+        margin-top: 3%;
+    }
+    .help-wrap {
+        width: 26%;
+    }
+    #qdmap {
+        width: 74%;
+    }
+}

@@ -1,0 +1,157 @@
+body{
+    background: url(../images/bg-center.png)no-repeat;
+    background-size: cover;
+
+}
+.container-fluid{
+    padding-bottom: 30px;
+}
+.header{
+    background: url(../images/header-bg.png)no-repeat;
+    background-size: cover;
+    line-height: 87px;
+    text-align: center;
+    background-position: center;
+    height: 87px;
+    margin-bottom: 22px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #08abff;
+}
+@font-face{
+    font-family: hanyi;
+    src: url('../font/汉仪综艺体简.ttf');
+}
+.header>span{
+    background: linear-gradient(to bottom, #0bc6d2, #fff);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: hanyi;
+        letter-spacing:4px;
+}
+.main-lf,
+.main-rt{
+    overflow: hidden;
+}
+.main-lf,
+.main-rt,
+.main-ct{
+    margin-bottom: 20px;
+}
+.main-bg{
+   padding:10px;
+   background: url("../images/main-bg.png") center no-repeat;
+   background-size: cover;
+}
+.main-bg>img{
+    width: 100%;
+}
+.app-title {
+    background-size: 100% 100%;
+    background: url('../images/app-title.png')left center no-repeat;
+    height: 30px;
+    line-height: 30px;
+    color: #01ffe2;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.app-content{
+    background: url('../images/app-content-bg.png') no-repeat;
+    background-size: 100% 100%;
+    padding: 14px 10px;
+    overflow: hidden;
+    height: 534px;
+    height: 100%;
+}
+.appcont-tab{
+    padding: 0 30px;
+    color: #fdc722;
+    background: #173a72;
+    font-size: 16px;
+    line-height: 40px;
+}
+.scroll-box{
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 4px;
+}
+.scroll-box>ul{
+    padding:4px 10px;
+    overflow: hidden;
+    height: 120%;
+}
+.scroll-box ul>li{
+    border-bottom: 1px solid #173a72;
+    color: #00ffe5;
+    padding: 0px 30px 0px 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+
+}
+ @media screen and (max-width: 1560px) {
+    .scroll-box ul>li{
+        padding: 0;
+    }
+ }
+.scroll-box .li-icon{
+  display: inline-block;
+   width: 24px;
+   height: 24px;
+   vertical-align: middle;
+    background: url('../images/bell-2.png')no-repeat;
+}
+.scroll-box ul>li>i{
+    float: right;
+    color: #2b77f2;
+}
+/* 警报 */
+ ul>li.bell-warn>.li-icon{
+    background: url('../images/bell-1.png')no-repeat;
+}
+/* 异常 */
+ul>li.sta-err .netSta-right>i{
+   color: #ff0000;
+}
+.net-sta{
+    height: 100%;
+    font-size: 14px;
+    line-height: 29px;
+}
+.net-sta>span{
+    color: #00c6ff;
+    height: 50%;
+  
+}
+.netSta-content{
+    color: #fff;
+}
+.netSta-content>div{
+    display: inline-block;
+    width: 49%;
+}
+.netSta-content>div>span,
+.netSta-content>div>i{
+    display: inline;
+}
+.netSta-left>i{
+    color: #d9f424;
+}
+.netSta-right>i{
+    color: #36ff00;
+}
+.center-group{
+    height: 386px;
+    margin-bottom: 30px;
+}
+.center-sta>span{
+    color: #fff;
+    display: inline;
+ }
+.center-sta>i{
+    display: inline;
+color: #00ffe5;
+}
+.center-sta .netSta-left>i{
+    color: #fff;
+}

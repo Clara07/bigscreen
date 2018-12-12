@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大屏示例三</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/gg-bigdata.css">
+</head>
+<body class="bigInter">
+<div class="container-fluid main-content">
+   <div class="row">
+       <!--左侧部分-->
+       <div class="col-sm-3 col-md-3 col-lg-3">
+           <div class="polaroidInter">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="gg-bigInterChart">
+                            <div class="echarts" id="interBarChartOne" style="width: 100%;height: 136px"></div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interPieChartOne" style="width: 100%;height: 140px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interBarChartTwo" style="width: 100%;height: 340px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--中间部分-->
+       <div class="col-sm-6 col-md-6 col-lg-6">
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content" style="text-align: center;padding: 1px 20px 20px 20px;">
+                       <h3 class="interBigTitle">
+                           <span>●|</span>大屏示例三<span>|●</span>
+                           <select class="form-control interBigSelect">
+                               <option value="2018">2018学年</option>
+                               <option value="2017">2017学年</option>
+                               <option value="2016">2016学年</option>
+                           </select>
+                       </h3>
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interMapChart"  style="width: 100%;height: 377px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interBarChartThree"  style="width: 100%;height: 200px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--右侧部分-->
+       <div class="col-sm-3 col-md-3 col-lg-3">
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interBarChartFour"  style="width: 100%;height: 165px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interPieChartTwo"  style="width: 100%;height: 225px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="polaroidInter">
+               <div class="ibox">
+                   <div class="ibox-content">
+                       <div class="gg-bigInterChart">
+                           <div class="echarts" id="interPieChartThree" style="width: 100%;height: 225px"></div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+</body>
+<!--引用相关js框架-->
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/bootstrap.min.js"></script>
+<script src="plugins/echarts/echarts.min.js"></script>
+<script src="plugins/echarts/world.js"></script>
+<!--引入主题-->
+<script src="plugins/echarts/macarons.js"></script>
+<!--大屏数据通用js-->
+<script src="js/gg-bigDataBasic.js"></script>
+<!--本界面相关的echar demo数据js-->
+<script src="js/gg-bigDataInter.js"></script>
+<script>
+    $(function(){
+        var conHeight=$(".main-content").outerHeight(true);
+        $("body").height(conHeight);
+        console.log( conHeight)
+    })
+</script>
+</html>

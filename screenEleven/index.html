@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>青岛教育后勤中心大数据</title>
+    <link rel="stylesheet" href="assets/css/common/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome/font-awesome.min.css"/>
+    <link rel="stylesheet" href="assets/css/common/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/hqIndex.css"/>
+    <style>
+    </style>
+</head>
+<body>
+<div class="qdback-wrap">
+    <!-- <img class="qd-bodyBG" src="assets/images/qd-bg.png"> -->
+    <div class="main-middle">
+        <div class="middle-select">
+            <div class="select-ljfl">
+                <img src="assets/images/icon-ljfl.png">
+                <a href="#">垃圾分类</a>
+            </div>
+            <div class="select-tyyp">
+                <img src="assets/images/icon-tyyp.png">
+                <a href="#">体育用品</a>
+            </div>
+            <div class="select-spjk">
+                <img src="assets/images/icon-spjk.png">
+                <a href="#">视频监控</a>
+            </div>
+            <div class="select-gyyp">
+                <img src="assets/images/icon-gyyp.png">
+                <a href="#">公寓用品</a>
+            </div>
+            <div class="select-zybcg">
+                <img src="assets/images/icon-zybcg.png">
+                <a href="#">作业本采购</a>
+            </div>
+            <div class="select-sccg">
+                <img src="assets/images/icon-sccg.png">
+                <a href="#">食材采购</a>
+            </div>
+            <div class="select-stry">
+                <img src="assets/images/icon-stry.png">
+                <a href="#">食堂人员</a>
+            </div>
+            <div class="select-xfcg">
+                <img src="assets/images/icon-xfcg.png">
+                <a href="#">校服采购</a>
+            </div>
+            <div class="select-ysjk">
+                <img src="assets/images/icon-ysjk.png">
+                <a href="#">用水监控</a>
+            </div>
+            <div class="select-ydjk">
+                <img src="assets/images/icon-ydjk.png">
+                <a href="#">用电监控</a>
+            </div>
+        </div>
+    </div>
+    <div class="header clearfix">
+        <div class="hd-time">
+            <span class="date-year"></span>
+            <span>-</span>
+            <span class="date-month"></span>
+            <span>-</span>
+            <span class="date-day"></span>
+            <span class="date-hour"></span>
+            <span>:</span>
+            <span class="date-minus"></span>
+            <span>:</span>
+            <span class="date-second"></span>
+        </div>
+        <div class="hd-title">青岛教育后勤中心大数据</div>
+        <div class="hd-weather">
+            
+        </div>
+    </div>
+    <div class="main-con clearfix">
+        <div class="main-left">
+            <div class="main-item">
+                <div class="main-item-hd">
+                    <p>用水情况监控</p>
+                    <span>Water Monitoring</span>
+                </div>
+                <div class="main-item-bd">
+                    <div class="item-sub-hd">
+                        <p><img src="assets/images/icon-water.png">每天用水量统计[2018-11-02]</p>
+                    </div>
+                    <div class="item-sub-bd">
+                        <div class="waterused-list-hd">
+                            <span>时间</span>
+                            <span>用水量</span>
+                        </div>
+                        <div class="waterused-list-bd">
+                            <ul class="waterused-list">
+                                <li>
+                                    <span>00:00-01:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>01:00-02:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>02:00-03:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>03:00-04:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>04:00-05:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>05:00-06:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>06:00-07:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>07:00-08:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>08:00-09:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>09:00-10:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>10:00-11:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                                <li>
+                                    <span>11:00-12:00</span>
+                                    <span>101（立方米）</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-sub-hd">
+                        <p><img src="assets/images/icon-water.png">每周用水量统计[11.5/11.11]</p>
+                    </div>
+                    <div class="item-sub-bd">
+                        <div class="waterused-Charts" id="waterused-week-lineCharts">
+                            
+                        </div>
+                    </div>
+                    <div class="hide-item">
+                        <div class="item-sub-hd">
+                            <p><img src="assets/images/icon-water.png">每月用水量统计[2018年11月]</p>
+                        </div>
+                        <div class="item-sub-bd">
+                            <div class="waterused-Charts" id="waterused-mouth-barCharts">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-right">
+            <div class="main-item">
+                <div class="main-item-hd">
+                    <p>用电情况监控</p>
+                    <span>Electricity Monitoring</span>
+                </div>
+                <div class="main-item-bd">
+                    <div class="item-sub-hd">
+                        <p><img src="assets/images/icon-light.png">每天用电量统计[2018-11-02]</p>
+                    </div>
+                    <div class="item-sub-bd">
+                        <div class="waterused-list-hd">
+                            <span>时间</span>
+                            <span>用电量</span>
+                        </div>
+                        <div class="waterused-list-bd">
+                            <ul class="waterused-list">
+                                <li>
+                                    <span>00:00-01:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>01:00-02:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>02:00-03:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>03:00-04:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>04:00-05:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>05:00-06:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>06:00-07:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>07:00-08:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>08:00-09:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>09:00-10:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>10:00-11:00</span>
+                                    <span>101°</span>
+                                </li>
+                                <li>
+                                    <span>11:00-12:00</span>
+                                    <span>101°</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item-sub-hd">
+                        <p><img src="assets/images/icon-light.png">每周用电量统计[11.5/11.11]</p>
+                    </div>
+                    <div class="item-sub-bd">
+                        <div class="waterused-Charts" id="lightused-week-lineCharts">
+                            
+                        </div>
+                    </div>
+                    <div class="hide-item">
+                        <div class="item-sub-hd">
+                            <p><img src="assets/images/icon-light.png">每月用电量统计[2018年11月]</p>
+                        </div>
+                        <div class="item-sub-bd">
+                            <div class="waterused-Charts" id="lightused-mouth-barCharts">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-middle">
+        <div class="modal-title">
+            <h2>用水情况监控</h2>
+            <span><i class="fa fa-times"></i></span>
+        </div>
+        <div class="modal-body">
+            <div class="qdUsed-list clearfix">
+                <div class="list-area">
+                    <ul>
+                        <li><span>市直属学校</span></li>
+                        <li><span>市南区</span></li>
+                        <li><span>市北区</span></li>
+                        <li><span>李沧区</span></li>
+                        <li class="active"><span>崂山区</span></li>
+                        <li><span>城阳区</span></li>
+                        <li><span>青西新区</span></li>
+                        <li><span>即墨区</span></li>
+                        <li><span>胶州市</span></li>
+                        <li><span>平度市</span></li>
+                        <li><span>莱西市</span></li>
+                    </ul>
+                </div>
+                <div class="list-school">
+                    <ul>
+                        <li>青岛一中</li>
+                        <li>青岛一中</li>
+                        <li class="active">青岛一中</li>
+                        <li>青岛一中</li>
+                        <li>青岛一中</li>
+                        <li>青岛一中</li>
+                    </ul>
+                </div>
+                <div class="list-con">
+                    <ul class="list-con-hd">
+                        <li class="active">一周用水曲线</li>
+                        <li>一周平均用水量</li>
+                        <li>一周单位面积用水量</li>
+                    </ul>
+                    <div class="list-con-charts" id="list-con-charts">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/common/jquery-1.9.1.min.js"></script>
+<script src="assets/js/echarts/echarts.min.js"></script>
+<script src="assets/js/index.js"></script>
+<!--显示时间-->
+<script src="assets/js/show-time.js"></script>
+<!--引入滚动条美化插件-->
+<script src="assets/js/jquery.slimscroll.min.js"></script>
+<script>
+    $(document).ready(function(){
+        
+    });
+</script>
+</html>
